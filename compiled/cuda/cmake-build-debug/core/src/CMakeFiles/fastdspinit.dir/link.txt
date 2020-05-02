@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfastdspinit.a  CMakeFiles/fastdspinit.dir/initialization.cu.o
+/usr/bin/ranlib libfastdspinit.a

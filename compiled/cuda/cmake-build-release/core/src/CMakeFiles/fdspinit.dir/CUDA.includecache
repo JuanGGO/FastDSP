@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
+stdio.h
+-
+
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/initialization.cuh
+
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/initialization.cu
+../include/initialization.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/initialization.cuh
+cuda_runtime_api.h
+-
+../include/cuda_helper.h
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
+

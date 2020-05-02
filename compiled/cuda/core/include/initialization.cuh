@@ -1,0 +1,5 @@
+
+namespace fdsp
+{
+    int GetDeviceCount();
+}

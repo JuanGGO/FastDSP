@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfdspstructs.a  CMakeFiles/fdspstructs.dir/arrays.cu.o
+/usr/bin/ranlib libfdspstructs.a

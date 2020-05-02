@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cuda"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\core\src\;CMake Files\structures\;CMake Files\structures\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuda">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/cuda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 cuda"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuda/fast">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/cuda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 cuda/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspinit">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/libfdspinit.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 fdspinit"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspinit/fast">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/libfdspinit.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 fdspinit/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspstructs">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/libfdspstructs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 fdspstructs"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspstructs/fast">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/libfdspstructs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 fdspstructs/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/initialization.cu">
+			<Option target="fdspinit"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/main.cu">
+			<Option target="cuda"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/src/arrays.cu">
+			<Option target="fdspstructs"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\core\src\"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structures\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

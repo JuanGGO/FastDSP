@@ -1,0 +1,2 @@
+/usr/bin/ar qc libftdspinit.a  CMakeFiles/ftdspinit.dir/initialization.cu.o
+/usr/bin/ranlib libftdspinit.a
