@@ -1,7 +1,7 @@
 from libcpp.vector cimport vector
 import numpy as np
 
-cdef extern from "../../../compiled/cuda/structures/include/data_structures.cuh" namespace "fdsp":
+cdef extern from "../../../compiled/cuda/test_structures/include/data_structures.cuh" namespace "fdsp":
     cdef cppclass GPUArray[T]:
         GPUArray(const T* ptr, const vector[size_t]& dimSizes)
         void Get(T *h_ptr)const

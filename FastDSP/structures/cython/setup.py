@@ -3,12 +3,12 @@ from Cython.Build import cythonize
 
 
 include_directories = [
-    "../../../compiled/cuda/structures/include",
+    "../../../compiled/cuda/test_structures/include",
     "/usr/local/cuda-10.2/include"
 ]
 
 library_directories = [
-    "../../../compiled/cuda/cmake-build-release/structures/src",
+    "../../../compiled/cuda/cmake-build-release/test_structures/src",
     "/usr/local/cuda-10.2/lib64"
 ]
 
