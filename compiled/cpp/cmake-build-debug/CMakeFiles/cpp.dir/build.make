@@ -79,6 +79,8 @@ cpp_EXTERNAL_OBJECTS =
 
 cpp: CMakeFiles/cpp.dir/main.cpp.o
 cpp: CMakeFiles/cpp.dir/build.make
+cpp: /usr/local/cuda-10.2/lib64/libcudart_static.a
+cpp: /usr/lib/x86_64-linux-gnu/librt.so
 cpp: CMakeFiles/cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp.dir/link.txt --verbose=$(VERBOSE)

@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/juan/Documents/Projects/FastDSP/compiled/cpp/../cuda/structures/include -I/usr/local/cuda-10.2/include 
 

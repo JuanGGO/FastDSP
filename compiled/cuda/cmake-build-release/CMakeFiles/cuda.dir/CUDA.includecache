@@ -29,4 +29,6 @@ vector
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
 cuda_runtime_api.h
 -
+thrust/device_vector.h
+-
 

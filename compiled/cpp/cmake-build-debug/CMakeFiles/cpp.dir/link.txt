@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/cpp.dir/main.cpp.o  -o cpp 
+/usr/bin/c++  -g   CMakeFiles/cpp.dir/main.cpp.o  -o cpp   -L/home/juan/Documents/Projects/FastDSP/compiled/cpp/../cuda/cmake-build-release/structures/src  -Wl,-rpath,/home/juan/Documents/Projects/FastDSP/compiled/cpp/../cuda/cmake-build-release/structures/src -lfdspstructs /usr/local/cuda-10.2/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so 
