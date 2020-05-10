@@ -6,5 +6,5 @@ CUDA_FLAGS = -O3 -DNDEBUG -Xcompiler=-fPIE   -std=c++14
 
 CUDA_DEFINES = 
 
-CUDA_INCLUDES = -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release -I/home/juan/Documents/Projects/FastDSP/compiled/cuda -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include 
+CUDA_INCLUDES = -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release -I/home/juan/Documents/Projects/FastDSP/compiled/cuda -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include -I/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include 
 

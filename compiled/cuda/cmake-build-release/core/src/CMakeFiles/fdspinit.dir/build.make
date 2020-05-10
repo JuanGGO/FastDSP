@@ -70,17 +70,47 @@ core/src/CMakeFiles/fdspinit.dir/initialization.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/fdspinit.dir/initialization.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+core/src/CMakeFiles/fdspinit.dir/debugging.cu.o: core/src/CMakeFiles/fdspinit.dir/flags.make
+core/src/CMakeFiles/fdspinit.dir/debugging.cu.o: ../core/src/debugging.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object core/src/CMakeFiles/fdspinit.dir/debugging.cu.o"
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src && /usr/local/cuda-10.2/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/debugging.cu -o CMakeFiles/fdspinit.dir/debugging.cu.o
+
+core/src/CMakeFiles/fdspinit.dir/debugging.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/fdspinit.dir/debugging.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+core/src/CMakeFiles/fdspinit.dir/debugging.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/fdspinit.dir/debugging.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+core/src/CMakeFiles/fdspinit.dir/data_types.cu.o: core/src/CMakeFiles/fdspinit.dir/flags.make
+core/src/CMakeFiles/fdspinit.dir/data_types.cu.o: ../core/src/data_types.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object core/src/CMakeFiles/fdspinit.dir/data_types.cu.o"
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src && /usr/local/cuda-10.2/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/data_types.cu -o CMakeFiles/fdspinit.dir/data_types.cu.o
+
+core/src/CMakeFiles/fdspinit.dir/data_types.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/fdspinit.dir/data_types.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+core/src/CMakeFiles/fdspinit.dir/data_types.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/fdspinit.dir/data_types.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 # Object files for target fdspinit
 fdspinit_OBJECTS = \
-"CMakeFiles/fdspinit.dir/initialization.cu.o"
+"CMakeFiles/fdspinit.dir/initialization.cu.o" \
+"CMakeFiles/fdspinit.dir/debugging.cu.o" \
+"CMakeFiles/fdspinit.dir/data_types.cu.o"
 
 # External object files for target fdspinit
 fdspinit_EXTERNAL_OBJECTS =
 
 core/src/libfdspinit.a: core/src/CMakeFiles/fdspinit.dir/initialization.cu.o
+core/src/libfdspinit.a: core/src/CMakeFiles/fdspinit.dir/debugging.cu.o
+core/src/libfdspinit.a: core/src/CMakeFiles/fdspinit.dir/data_types.cu.o
 core/src/libfdspinit.a: core/src/CMakeFiles/fdspinit.dir/build.make
 core/src/libfdspinit.a: core/src/CMakeFiles/fdspinit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA static library libfdspinit.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CUDA static library libfdspinit.a"
 	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src && $(CMAKE_COMMAND) -P CMakeFiles/fdspinit.dir/cmake_clean_target.cmake
 	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/core/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdspinit.dir/link.txt --verbose=$(VERBOSE)
 

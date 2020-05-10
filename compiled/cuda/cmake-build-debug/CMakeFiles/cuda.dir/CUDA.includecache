@@ -6,8 +6,32 @@
 
 #IncludeRegexTransform: 
 
+../structures/include/data_structures.cuh
+vector
+-
+../../core/include/cuda_helper.h
+../core/include/cuda_helper.h
+cuComplex.h
+-
+cuda_runtime_api.h
+-
+thrust/device_vector.h
+-
+complex.h
+-
+
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/fft_related.cuh
+cufft.h
+-
+../structures/include/data_structures.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/structures/include/data_structures.cuh
+
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
 stdio.h
+-
+
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/debugging.cuh
+cuComplex.h
 -
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/initialization.cuh
@@ -19,7 +43,17 @@ core/include/initialization.cuh
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/initialization.cuh
 structures/include/data_structures.cuh
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include/data_structures.cuh
+algorithms/include/fft_related.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/fft_related.cuh
+core/include/debugging.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/debugging.cuh
 vector
+-
+thrust/device_vector.h
+-
+utils/include/math.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include/math.cuh
+complex
 -
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include/data_structures.cuh
@@ -27,8 +61,16 @@ vector
 -
 ../../core/include/cuda_helper.h
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
+cuComplex.h
+-
 cuda_runtime_api.h
 -
 thrust/device_vector.h
 -
+complex.h
+-
+
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include/math.cuh
+../../structures/include/data_structures.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include/data_structures.cuh
 

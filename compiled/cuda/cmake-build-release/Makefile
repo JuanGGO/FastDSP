@@ -149,6 +149,32 @@ fdspstructs/fast:
 	$(MAKE) -f structures/src/CMakeFiles/fdspstructs.dir/build.make structures/src/CMakeFiles/fdspstructs.dir/build
 .PHONY : fdspstructs/fast
 
+#=============================================================================
+# Target rules for targets named fdspalgorithms
+
+# Build rule for target.
+fdspalgorithms: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fdspalgorithms
+.PHONY : fdspalgorithms
+
+# fast build rule for target.
+fdspalgorithms/fast:
+	$(MAKE) -f algorithms/src/CMakeFiles/fdspalgorithms.dir/build.make algorithms/src/CMakeFiles/fdspalgorithms.dir/build
+.PHONY : fdspalgorithms/fast
+
+#=============================================================================
+# Target rules for targets named fdspmath
+
+# Build rule for target.
+fdspmath: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fdspmath
+.PHONY : fdspmath
+
+# fast build rule for target.
+fdspmath/fast:
+	$(MAKE) -f utils/src/CMakeFiles/fdspmath.dir/build.make utils/src/CMakeFiles/fdspmath.dir/build
+.PHONY : fdspmath/fast
+
 main.o: main.cu.o
 
 .PHONY : main.o
@@ -187,6 +213,8 @@ help:
 	@echo "... cuda"
 	@echo "... fdspinit"
 	@echo "... fdspstructs"
+	@echo "... fdspalgorithms"
+	@echo "... fdspmath"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

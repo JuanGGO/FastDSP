@@ -5,7 +5,7 @@
 		<Option title="cuda"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\core\src\;CMake Files\structures\;CMake Files\structures\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\core\src\;CMake Files\structures\;CMake Files\structures\src\;CMake Files\algorithms\;CMake Files\algorithms\src\;CMake Files\utils\;CMake Files\utils\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug"/>
@@ -48,6 +48,8 @@
 					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
 					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
 					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda"/>
@@ -67,6 +69,8 @@
 					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
 					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
 					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda/fast"/>
@@ -149,7 +153,98 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/structures/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="fdspalgorithms">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/libfdspalgorithms.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 fdspalgorithms"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspalgorithms/fast">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/libfdspalgorithms.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 fdspalgorithms/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/algorithms/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspmath">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/libfdspmath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 fdspmath"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdspmath/fast">
+				<Option output="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/libfdspmath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include"/>
+					<Add directory="/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 fdspmath/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/utils/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/src/fft.cu">
+			<Option target="fdspalgorithms"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/data_types.cu">
+			<Option target="fdspinit"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/debugging.cu">
+			<Option target="fdspinit"/>
+		</Unit>
 		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/initialization.cu">
 			<Option target="fdspinit"/>
 		</Unit>
@@ -159,6 +254,9 @@
 		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/src/arrays.cu">
 			<Option target="fdspstructs"/>
 		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/src/arithmetic.cu">
+			<Option target="fdspmath"/>
+		</Unit>
 		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -167,6 +265,12 @@
 		</Unit>
 		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\structures\src\"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\algorithms\src\"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/utils/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\utils\src\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

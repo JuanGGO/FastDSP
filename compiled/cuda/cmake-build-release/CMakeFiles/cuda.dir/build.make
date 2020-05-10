@@ -79,8 +79,10 @@ cuda_EXTERNAL_OBJECTS =
 
 CMakeFiles/cuda.dir/cmake_device_link.o: CMakeFiles/cuda.dir/main.cu.o
 CMakeFiles/cuda.dir/cmake_device_link.o: CMakeFiles/cuda.dir/build.make
+CMakeFiles/cuda.dir/cmake_device_link.o: algorithms/src/libfdspalgorithms.a
 CMakeFiles/cuda.dir/cmake_device_link.o: structures/src/libfdspstructs.a
 CMakeFiles/cuda.dir/cmake_device_link.o: core/src/libfdspinit.a
+CMakeFiles/cuda.dir/cmake_device_link.o: utils/src/libfdspmath.a
 CMakeFiles/cuda.dir/cmake_device_link.o: CMakeFiles/cuda.dir/dlink.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CUDA device code CMakeFiles/cuda.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cuda.dir/dlink.txt --verbose=$(VERBOSE)
@@ -99,8 +101,10 @@ cuda_EXTERNAL_OBJECTS =
 
 cuda: CMakeFiles/cuda.dir/main.cu.o
 cuda: CMakeFiles/cuda.dir/build.make
+cuda: algorithms/src/libfdspalgorithms.a
 cuda: structures/src/libfdspstructs.a
 cuda: core/src/libfdspinit.a
+cuda: utils/src/libfdspmath.a
 cuda: CMakeFiles/cuda.dir/cmake_device_link.o
 cuda: CMakeFiles/cuda.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CUDA executable cuda"

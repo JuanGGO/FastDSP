@@ -3,18 +3,21 @@ from Cython.Build import cythonize
 
 
 include_directories = [
-    "../../../compiled/cuda/test_structures/include",
+    "../../../compiled/cuda/structures/include",
+    "../../../compiled/cuda/core/include",
     "/usr/local/cuda-10.2/include"
 ]
 
 library_directories = [
-    "../../../compiled/cuda/cmake-build-release/test_structures/src",
+    "../../../compiled/cuda/cmake-build-release/structures/src",
+    "../../../compiled/cuda/cmake-build-release/core/src",
     "/usr/local/cuda-10.2/lib64"
 ]
 
 libraries = [
     "fdspstructs",
-    "cudart"
+    "cudart",
+    "fdspinit"
 ]
 
 sources = [

@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CUDA
+  "/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/data_types.cu" "/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/core/src/CMakeFiles/fdspinit.dir/data_types.cu.o"
+  "/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/debugging.cu" "/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/core/src/CMakeFiles/fdspinit.dir/debugging.cu.o"
   "/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/initialization.cu" "/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-debug/core/src/CMakeFiles/fdspinit.dir/initialization.cu.o"
   )
 set(CMAKE_CUDA_COMPILER_ID "NVIDIA")

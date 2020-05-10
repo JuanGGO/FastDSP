@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../algorithms/src/CMakeLists.txt"
   "CMakeFiles/3.16.5/CMakeCUDACompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
   "../core/src/CMakeLists.txt"
   "../structures/src/CMakeLists.txt"
+  "../utils/src/CMakeLists.txt"
   "/home/juan/Programs/clion-2019.3.3/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCUDAInformation.cmake"
   "/home/juan/Programs/clion-2019.3.3/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
   "/home/juan/Programs/clion-2019.3.3/bin/cmake/linux/share/cmake-3.16/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
@@ -37,6 +39,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "core/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "structures/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "algorithms/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "utils/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -44,4 +48,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/cuda.dir/DependInfo.cmake"
   "core/src/CMakeFiles/fdspinit.dir/DependInfo.cmake"
   "structures/src/CMakeFiles/fdspstructs.dir/DependInfo.cmake"
+  "algorithms/src/CMakeFiles/fdspalgorithms.dir/DependInfo.cmake"
+  "utils/src/CMakeFiles/fdspmath.dir/DependInfo.cmake"
   )

@@ -125,6 +125,60 @@ fdspinit/fast:
 	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/build
 .PHONY : fdspinit/fast
 
+data_types.o: data_types.cu.o
+
+.PHONY : data_types.o
+
+# target to build an object file
+data_types.cu.o:
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/data_types.cu.o
+.PHONY : data_types.cu.o
+
+data_types.i: data_types.cu.i
+
+.PHONY : data_types.i
+
+# target to preprocess a source file
+data_types.cu.i:
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/data_types.cu.i
+.PHONY : data_types.cu.i
+
+data_types.s: data_types.cu.s
+
+.PHONY : data_types.s
+
+# target to generate assembly for a file
+data_types.cu.s:
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/data_types.cu.s
+.PHONY : data_types.cu.s
+
+debugging.o: debugging.cu.o
+
+.PHONY : debugging.o
+
+# target to build an object file
+debugging.cu.o:
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/debugging.cu.o
+.PHONY : debugging.cu.o
+
+debugging.i: debugging.cu.i
+
+.PHONY : debugging.i
+
+# target to preprocess a source file
+debugging.cu.i:
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/debugging.cu.i
+.PHONY : debugging.cu.i
+
+debugging.s: debugging.cu.s
+
+.PHONY : debugging.s
+
+# target to generate assembly for a file
+debugging.cu.s:
+	cd /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release && $(MAKE) -f core/src/CMakeFiles/fdspinit.dir/build.make core/src/CMakeFiles/fdspinit.dir/debugging.cu.s
+.PHONY : debugging.cu.s
+
 initialization.o: initialization.cu.o
 
 .PHONY : initialization.o
@@ -161,6 +215,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fdspinit"
+	@echo "... data_types.o"
+	@echo "... data_types.i"
+	@echo "... data_types.s"
+	@echo "... debugging.o"
+	@echo "... debugging.i"
+	@echo "... debugging.s"
 	@echo "... initialization.o"
 	@echo "... initialization.i"
 	@echo "... initialization.s"

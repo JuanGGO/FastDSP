@@ -7,3 +7,9 @@
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/CMakeFiles/rebuild_cache.dir
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/CMakeFiles/edit_cache.dir
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/structures/src/CMakeFiles/fdspstructs.dir
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/algorithms/src/CMakeFiles/rebuild_cache.dir
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/algorithms/src/CMakeFiles/edit_cache.dir
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/algorithms/src/CMakeFiles/fdspalgorithms.dir
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/utils/src/CMakeFiles/rebuild_cache.dir
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/utils/src/CMakeFiles/edit_cache.dir
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/cmake-build-release/utils/src/CMakeFiles/fdspmath.dir

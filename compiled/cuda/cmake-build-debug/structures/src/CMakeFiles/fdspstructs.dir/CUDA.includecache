@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../core/include/debugging.cuh
+cuComplex.h
+-
+
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
 stdio.h
 -
@@ -15,16 +19,20 @@ vector
 -
 ../../core/include/cuda_helper.h
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
+cuComplex.h
+-
 cuda_runtime_api.h
 -
 thrust/device_vector.h
+-
+complex.h
 -
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/src/arrays.cu
 ../include/data_structures.cuh
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include/data_structures.cuh
-thrust/copy.h
--
-thrust/execution_policy.h
+../core/include/debugging.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/core/include/debugging.cuh
+cuComplex.h
 -
 

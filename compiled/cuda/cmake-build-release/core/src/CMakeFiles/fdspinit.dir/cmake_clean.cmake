@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/fdspinit.dir/data_types.cu.o"
+  "CMakeFiles/fdspinit.dir/debugging.cu.o"
   "CMakeFiles/fdspinit.dir/initialization.cu.o"
   "libfdspinit.a"
   "libfdspinit.pdb"
