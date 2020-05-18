@@ -12,10 +12,22 @@ cdef class BaseGPUArray:
         list dims_list
         vector[size_t] dim_sizes
 
+        cuda.GPUArray[unsigned char] *_uint8thisptr
+        cuda.GPUArray[int] *_ithisptr
         cuda.GPUArray[float] *_fthisptr
         cuda.GPUArray[double] *_dthisptr
         cuda.GPUArray[cuComplex] *_cfthisptr
         cuda.GPUArray[cuDoubleComplex] *_cdthisptr
+
+
+cdef class GPUArrayUint8(BaseGPUArray):
+
+    cpdef get(self)
+
+
+cdef class GPUArrayInt(BaseGPUArray):
+
+    cpdef get(self)
 
 
 cdef class GPUArrayFloat(BaseGPUArray):

@@ -80,6 +80,8 @@ thrust::device_vector<T> fdsp::GPUArray<T>::GetDeviceVector() const
     return m_dArray;
 }
 
+template class fdsp::GPUArray<unsigned char>;
+template class fdsp::GPUArray<int>;
 template class fdsp::GPUArray<float>;
 template class fdsp::GPUArray<double>;
 template class fdsp::GPUArray<cuComplex>;

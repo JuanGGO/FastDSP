@@ -1,5 +1,6 @@
 #pragma once
 #include <stdio.h>
+#include <nppdefs.h>
 
 
 #define CHECK(call)                                                            \
@@ -18,6 +19,17 @@
 {                                                                              \
     cufftResult err;                                                           \
     if ( (err = (call)) != CUFFT_SUCCESS)                                      \
+    {                                                                          \
+        fprintf(stderr, "Got CUFFT error %d at %s:%d\n", err, __FILE__,        \
+                __LINE__);                                                     \
+        exit(1);                                                               \
+    }                                                                          \
+}
+
+#define CHECK_NPP(call)                                                      \
+{                                                                              \
+    NppStatus err;                                                           \
+    if ( (err = (call)) != NPP_SUCCESS)                                      \
     {                                                                          \
         fprintf(stderr, "Got CUFFT error %d at %s:%d\n", err, __FILE__,        \
                 __LINE__);                                                     \

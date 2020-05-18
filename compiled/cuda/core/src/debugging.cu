@@ -47,21 +47,21 @@ namespace fdsp
     void PrintDevicePtr(const float* d_ptr, int N)
     {
         KernelPrintDevicePtr<<<1, 1>>>(d_ptr, N);
-        CHECK(cudaDeviceSynchronize())
+        CHECK(cudaDeviceSynchronize());
         CHECK(cudaGetLastError());
     }
 
     void PrintDevicePtr(const double *d_ptr, int N)
     {
         KernelPrintDevicePtr<<<1, 1>>>(d_ptr, N);
-        CHECK(cudaDeviceSynchronize())
+        CHECK(cudaDeviceSynchronize());
         CHECK(cudaGetLastError());
     }
 
     void PrintDevicePtr(const cuComplex* d_ptr, int N)
     {
         KernelPrintDevicePtr<<<1, 1>>>(d_ptr, N);
-        CHECK(cudaDeviceSynchronize())
+        CHECK(cudaDeviceSynchronize());
         CHECK(cudaGetLastError());
     }
 

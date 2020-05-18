@@ -239,6 +239,12 @@
 		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/src/fft.cu">
 			<Option target="fdspalgorithms"/>
 		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/src/image_processing/morphology.cu">
+			<Option target="fdspalgorithms"/>
+		</Unit>
+		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/src/reductions.cu">
+			<Option target="fdspalgorithms"/>
+		</Unit>
 		<Unit filename="/home/juan/Documents/Projects/FastDSP/compiled/cuda/core/src/data_types.cu">
 			<Option target="fdspinit"/>
 		</Unit>

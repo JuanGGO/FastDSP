@@ -1,9 +1,10 @@
 import numpy as np
 
-from FastDSP.core import fsdp_context
+from FastDSP.core import fdsp_context
 from FastDSP.core import decide_type
 from FastDSP.structures import _data_structures
 from FastDSP.utils import _math_utils
+from FastDSP.algorithms import reductions
 
 
 class GPUArray:
@@ -34,11 +35,11 @@ class GPUArray:
 
     def __init__(self, array, device=0):
         """
-        :param array: numpy array of type float32, float64, complex64 or complex128.
+        :param array: numpy array of type uint8, int32, float32, float64, complex64 or complex128.
         :param device: Device id where to transfer array.
         """
 
-        if fsdp_context['num_devices'] == 0:
+        if fdsp_context['num_devices'] == 0:
             raise MemoryError("Device not found. Not possible to allocate array")
 
         if not isinstance(array, np.ndarray):
@@ -49,7 +50,11 @@ class GPUArray:
         self.dtype = array.dtype
         self.size = self.array.size
 
-        if array.dtype == np.float32:
+        if array.dtype == np.uint8:
+            self.array = _data_structures.GPUArrayUint8(self.array)
+        elif array.dtype == np.int32:
+            self.array = _data_structures.GPUArrayInt(self.array)
+        elif array.dtype == np.float32:
             self.array = _data_structures.GPUArrayFloat(self.array)
         elif array.dtype == np.float64:
             self.array = _data_structures.GPUArrayDouble(self.array)
@@ -58,7 +63,7 @@ class GPUArray:
         elif array.dtype == np.complex128:
             self.array = _data_structures.GPUArrayComplexDouble(self.array)
         else:
-            raise ValueError("Only float32, float64, complex64,and complex128 arrays are supported")
+            raise ValueError("Only uint8, int32, float32, float64, complex64,and complex128 arrays are supported")
 
         self.device = device
         self.shape = array.shape
@@ -206,3 +211,15 @@ class GPUArray:
         """
         return self.array.get().reshape(*self.shape)
 
+    def mean(self, axis=-1):
+        '''
+        Calculates the mean of the array around a given axis
+
+        :param axis: axis to use to calculate the mean
+        :return: mean of the array
+        '''
+
+        if self.ndim < axis:
+            raise ValueError("Can't find mean around axis {} on array of {} dimensions".format(axis, self.ndim))
+
+        return reductions.mean(self, axis)

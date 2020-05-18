@@ -3,6 +3,7 @@
 
 CMakeFiles/cuda.dir/main.cu.o
  ../structures/include/data_structures.cuh
+ /home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/basic_operations.cuh
  /home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/fft_related.cuh
  /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
  /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/debugging.cuh

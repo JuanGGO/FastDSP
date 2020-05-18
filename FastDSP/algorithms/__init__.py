@@ -1,0 +1,1 @@
+from FastDSP.algorithms.reductions import (mean)

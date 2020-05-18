@@ -16,8 +16,14 @@ cd ../../FastDSP/structures/cython/
 python setup.py build_ext -i
 cd $work_dir
 
+# algorithms
+cd ../../FastDSP/algorithms/cython/
+python setup_reductions.py build_ext -i
+cd $work_dir
+
 # utils
 cd ../../FastDSP/utils/cython/
 python setup.py build_ext -i
 cd $work_dir
+
 

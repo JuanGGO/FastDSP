@@ -29,6 +29,8 @@ cufft.h
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
 stdio.h
 -
+nppdefs.h
+-
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/debugging.cuh
 cuComplex.h

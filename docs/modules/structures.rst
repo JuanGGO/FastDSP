@@ -14,4 +14,5 @@ FastDSP Structures
     .. automethod:: __mul__(self, other)
     .. automethod:: __truediv__(self, other)
     .. automethod:: get(self)
+    .. automethod:: mean(self, axis=-1)
 

@@ -20,6 +20,14 @@ thrust/device_vector.h
 complex.h
 -
 
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/basic_operations.cuh
+cuda_runtime_api.h
+-
+vector
+-
+cuComplex.h
+-
+
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/fft_related.cuh
 cufft.h
 -
@@ -28,6 +36,8 @@ cufft.h
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
 stdio.h
+-
+nppdefs.h
 -
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/debugging.cuh
@@ -47,6 +57,8 @@ algorithms/include/fft_related.cuh
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/fft_related.cuh
 core/include/debugging.cuh
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/debugging.cuh
+algorithms/include/basic_operations.cuh
+/home/juan/Documents/Projects/FastDSP/compiled/cuda/algorithms/include/basic_operations.cuh
 vector
 -
 thrust/device_vector.h

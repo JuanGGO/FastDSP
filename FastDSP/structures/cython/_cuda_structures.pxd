@@ -1,6 +1,9 @@
 from libcpp.vector cimport vector
 
 
+ctypedef unsigned char uint8
+
+
 #TODO: make the path relative to what the client has
 cdef extern from "/usr/local/cuda-10.2/include/vector_types.h" :
     struct float2:

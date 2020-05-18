@@ -33,6 +33,62 @@ cdef class BaseGPUArray:
             raise ValueError("Either the argument array or dimension_size should be given")
 
 
+cdef class GPUArrayUint8(BaseGPUArray):
+
+    def __cinit__(self, array=None, list dimension_sizes=[]):
+        if array is None:
+            array = np.zeros((self.size, ), dtype=np.uint8)
+        cdef:
+            unsigned char[::1] v = np.ascontiguousarray(array.ravel())
+        self._uint8thisptr = new cuda.GPUArray[unsigned char](&v[0], self.dim_sizes)
+
+    def __dealloc__(self):
+        if self._uint8thisptr:
+            del self._uint8thisptr
+
+    def __getitem__(self, index):
+        return self._uint8thisptr[0].GetElement(<size_t>index)
+
+    @property
+    def dtype(self):
+        return 'uint8'
+
+    cpdef get(self):
+        cdef:
+            unsigned char[::1] out = np.zeros((self.size, ), dtype=np.uint8)
+
+        self._uint8thisptr[0].Get(&out[0])
+        return np.asarray(out).reshape(*self.dims_list)
+
+
+cdef class GPUArrayInt(BaseGPUArray):
+
+    def __cinit__(self, array=None, list dimension_sizes=[]):
+        if array is None:
+            array = np.zeros((self.size, ), dtype=np.int32)
+        cdef:
+            int[::1] v = np.ascontiguousarray(array.ravel())
+        self._ithisptr = new cuda.GPUArray[int](&v[0], self.dim_sizes)
+
+    def __dealloc__(self):
+        if self._ithisptr:
+            del self._ithisptr
+
+    def __getitem__(self, index):
+        return self._ithisptr[0].GetElement(<size_t>index)
+
+    @property
+    def dtype(self):
+        return 'int'
+
+    cpdef get(self):
+        cdef:
+            int[::1] out = np.zeros((self.size, ), dtype=np.int32)
+
+        self._ithisptr[0].Get(&out[0])
+        return np.asarray(out).reshape(*self.dims_list)
+
+
 cdef class GPUArrayFloat(BaseGPUArray):
 
     def __cinit__(self, array=None, list dimension_sizes=[]):
@@ -159,7 +215,7 @@ cdef class GPUArrayComplexDouble(BaseGPUArray):
         if self.v:
             free(self.v)
         if self._cdthisptr:
-            del self._thisptr
+            del self._cdthisptr
 
     def __getitem__(self, index):
         value =  self._cdthisptr.GetElement(<int>index)

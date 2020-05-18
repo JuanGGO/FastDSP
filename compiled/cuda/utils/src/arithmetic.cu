@@ -7,12 +7,22 @@
 struct Plus
 {
     __device__
+    unsigned char operator()(const unsigned char& x, const unsigned char& y)
+    {
+        return x + y;
+    }
+    __device__
+    int operator()(const int& x, const int& y)
+    {
+        return x + y;
+    }
+    __device__
     float operator()(const float& x, const float& y)
     {
         return x + y;
     }
     __device__
-    float operator()(const double& x, const double& y)
+    double operator()(const double& x, const double& y)
     {
         return x + y;
     }
@@ -40,6 +50,8 @@ void fdsp::AddDevicePointers(const T *d_arr1, const T *d_arr2, int N, T *out)
         thrust::transform(thrust::device, d_arr1, d_arr1 + N, d_arr2, out, Plus());
 }
 
+template void fdsp::AddDevicePointers<unsigned char>(const unsigned char *d_arr1, const unsigned char *d_arr2, int N, unsigned char *out);
+template void fdsp::AddDevicePointers<int>(const int *d_arr1, const int *d_arr2, int N, int *out);
 template void fdsp::AddDevicePointers<float>(const float *d_arr1, const float *d_arr2, int N, float *out);
 template void fdsp::AddDevicePointers<double>(const double *d_arr1, const double *d_arr2, int N, double *out);
 template void fdsp::AddDevicePointers<cuComplex>(const cuComplex *d_arr1, const cuComplex *d_arr2, int N, cuComplex *out);
@@ -54,6 +66,8 @@ fdsp::GPUArray<T> fdsp::AddGPUArrays(const GPUArray<T>& arr1, const GPUArray<T>&
     return out;
 }
 
+template fdsp::GPUArray<unsigned char> fdsp::AddGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&);
+template fdsp::GPUArray<int> fdsp::AddGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&);
 template fdsp::GPUArray<float> fdsp::AddGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&);
 template fdsp::GPUArray<double> fdsp::AddGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&);
 template fdsp::GPUArray<cuComplex> fdsp::AddGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&);
@@ -67,6 +81,8 @@ void fdsp::AddGPUArrays(const GPUArray<T>& arr1, const GPUArray<T>& arr2, GPUArr
 
 }
 
+template void fdsp::AddGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&, GPUArray<unsigned char>&);
+template void fdsp::AddGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&, GPUArray<int>&);
 template void fdsp::AddGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&, GPUArray<float>&);
 template void fdsp::AddGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&, GPUArray<double>&);
 template void fdsp::AddGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&, GPUArray<cuComplex>&);
@@ -79,12 +95,22 @@ template void fdsp::AddGPUArrays<cuDoubleComplex>(const GPUArray<cuDoubleComplex
 struct Subtraction
 {
     __device__
+    unsigned char operator()(const unsigned char& x, const unsigned char& y)
+    {
+        return x - y;
+    }
+    __device__
+    int operator()(const int& x, const int& y)
+    {
+        return x - y;
+    }
+    __device__
     float operator()(const float& x, const float& y)
     {
         return x - y;
     }
     __device__
-    float operator()(const double& x, const double& y)
+    double operator()(const double& x, const double& y)
     {
         return x - y;
     }
@@ -112,6 +138,8 @@ void fdsp::SubtractDevicePointers(const T *d_arr1, const T *d_arr2, int N, T *ou
     thrust::transform(thrust::device, d_arr1, d_arr1 + N, d_arr2, out, Subtraction());
 }
 
+template void fdsp::SubtractDevicePointers<unsigned char>(const unsigned char *d_arr1, const unsigned char *d_arr2, int N, unsigned char *out);
+template void fdsp::SubtractDevicePointers<int>(const int *d_arr1, const int *d_arr2, int N, int *out);
 template void fdsp::SubtractDevicePointers<float>(const float *d_arr1, const float *d_arr2, int N, float *out);
 template void fdsp::SubtractDevicePointers<double>(const double *d_arr1, const double *d_arr2, int N, double *out);
 template void fdsp::SubtractDevicePointers<cuComplex>(const cuComplex *d_arr1, const cuComplex *d_arr2, int N, cuComplex *out);
@@ -126,6 +154,8 @@ fdsp::GPUArray<T> fdsp::SubtractGPUArrays(const GPUArray<T>& arr1, const GPUArra
     return out;
 }
 
+template fdsp::GPUArray<unsigned char> fdsp::SubtractGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&);
+template fdsp::GPUArray<int> fdsp::SubtractGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&);
 template fdsp::GPUArray<float> fdsp::SubtractGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&);
 template fdsp::GPUArray<double> fdsp::SubtractGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&);
 template fdsp::GPUArray<cuComplex> fdsp::SubtractGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&);
@@ -139,6 +169,8 @@ void fdsp::SubtractGPUArrays(const GPUArray<T>& arr1, const GPUArray<T>& arr2, G
 
 }
 
+template void fdsp::SubtractGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&, GPUArray<unsigned char>&);
+template void fdsp::SubtractGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&, GPUArray<int>&);
 template void fdsp::SubtractGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&, GPUArray<float>&);
 template void fdsp::SubtractGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&, GPUArray<double>&);
 template void fdsp::SubtractGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&, GPUArray<cuComplex>&);
@@ -151,12 +183,22 @@ template void fdsp::SubtractGPUArrays<cuDoubleComplex>(const GPUArray<cuDoubleCo
 struct Multiplication
 {
     __device__
+    unsigned char operator()(const unsigned char& x, const unsigned char& y)
+    {
+        return x*y;
+    }
+    __device__
+    int operator()(const int& x, const int& y)
+    {
+        return x*y;
+    }
+    __device__
     float operator()(const float& x, const float& y)
     {
         return x*y;
     }
     __device__
-    float operator()(const double& x, const double& y)
+    double operator()(const double& x, const double& y)
     {
         return x*y;
     }
@@ -184,6 +226,8 @@ void fdsp::MultiplyDevicePointers(const T *d_arr1, const T *d_arr2, int N, T *ou
     thrust::transform(thrust::device, d_arr1, d_arr1 + N, d_arr2, out, Multiplication());
 }
 
+template void fdsp::MultiplyDevicePointers<unsigned char>(const unsigned char *d_arr1, const unsigned char *d_arr2, int N, unsigned char *out);
+template void fdsp::MultiplyDevicePointers<int>(const int *d_arr1, const int *d_arr2, int N, int *out);
 template void fdsp::MultiplyDevicePointers<float>(const float *d_arr1, const float *d_arr2, int N, float *out);
 template void fdsp::MultiplyDevicePointers<double>(const double *d_arr1, const double *d_arr2, int N, double *out);
 template void fdsp::MultiplyDevicePointers<cuComplex>(const cuComplex *d_arr1, const cuComplex *d_arr2, int N, cuComplex *out);
@@ -198,6 +242,8 @@ fdsp::GPUArray<T> fdsp::MultiplyGPUArrays(const GPUArray<T>& arr1, const GPUArra
     return out;
 }
 
+template fdsp::GPUArray<unsigned char> fdsp::MultiplyGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&);
+template fdsp::GPUArray<int> fdsp::MultiplyGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&);
 template fdsp::GPUArray<float> fdsp::MultiplyGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&);
 template fdsp::GPUArray<double> fdsp::MultiplyGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&);
 template fdsp::GPUArray<cuComplex> fdsp::MultiplyGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&);
@@ -211,6 +257,8 @@ void fdsp::MultiplyGPUArrays(const GPUArray<T>& arr1, const GPUArray<T>& arr2, G
 
 }
 
+template void fdsp::MultiplyGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&, GPUArray<unsigned char>&);
+template void fdsp::MultiplyGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&, GPUArray<int>&);
 template void fdsp::MultiplyGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&, GPUArray<float>&);
 template void fdsp::MultiplyGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&, GPUArray<double>&);
 template void fdsp::MultiplyGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&, GPUArray<cuComplex>&);
@@ -223,12 +271,22 @@ template void fdsp::MultiplyGPUArrays<cuDoubleComplex>(const GPUArray<cuDoubleCo
 struct Division
 {
     __device__
+    unsigned char operator()(const unsigned char& x, const unsigned char& y)
+    {
+        return x/y;
+    }
+    __device__
+    int operator()(const int& x, const int& y)
+    {
+        return x/y;
+    }
+    __device__
     float operator()(const float& x, const float& y)
     {
         return x/y;
     }
     __device__
-    float operator()(const double& x, const double& y)
+    double operator()(const double& x, const double& y)
     {
         return x/y;
     }
@@ -258,6 +316,8 @@ void fdsp::DivideDevicePointers(const T *d_arr1, const T *d_arr2, int N, T *out)
     thrust::transform(thrust::device, d_arr1, d_arr1 + N, d_arr2, out, Division());
 }
 
+template void fdsp::DivideDevicePointers<unsigned char>(const unsigned char *d_arr1, const unsigned char *d_arr2, int N, unsigned char *out);
+template void fdsp::DivideDevicePointers<int>(const int *d_arr1, const int *d_arr2, int N, int *out);
 template void fdsp::DivideDevicePointers<float>(const float *d_arr1, const float *d_arr2, int N, float *out);
 template void fdsp::DivideDevicePointers<double>(const double *d_arr1, const double *d_arr2, int N, double *out);
 template void fdsp::DivideDevicePointers<cuComplex>(const cuComplex *d_arr1, const cuComplex *d_arr2, int N, cuComplex *out);
@@ -272,6 +332,8 @@ fdsp::GPUArray<T> fdsp::DivideGPUArrays(const GPUArray<T>& arr1, const GPUArray<
     return out;
 }
 
+template fdsp::GPUArray<unsigned char> fdsp::DivideGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&);
+template fdsp::GPUArray<int> fdsp::DivideGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&);
 template fdsp::GPUArray<float> fdsp::DivideGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&);
 template fdsp::GPUArray<double> fdsp::DivideGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&);
 template fdsp::GPUArray<cuComplex> fdsp::DivideGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&);
@@ -285,6 +347,8 @@ void fdsp::DivideGPUArrays(const GPUArray<T>& arr1, const GPUArray<T>& arr2, GPU
 
 }
 
+template void fdsp::DivideGPUArrays<unsigned char>(const GPUArray<unsigned char>&, const GPUArray<unsigned char>&, GPUArray<unsigned char>&);
+template void fdsp::DivideGPUArrays<int>(const GPUArray<int>&, const GPUArray<int>&, GPUArray<int>&);
 template void fdsp::DivideGPUArrays<float>(const GPUArray<float>&, const GPUArray<float>&, GPUArray<float>&);
 template void fdsp::DivideGPUArrays<double>(const GPUArray<double>&, const GPUArray<double>&, GPUArray<double>&);
 template void fdsp::DivideGPUArrays<cuComplex>(const GPUArray<cuComplex>&, const GPUArray<cuComplex>&, GPUArray<cuComplex>&);

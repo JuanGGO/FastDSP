@@ -13,6 +13,8 @@ cuComplex.h
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/core/include/cuda_helper.h
 stdio.h
 -
+nppdefs.h
+-
 
 /home/juan/Documents/Projects/FastDSP/compiled/cuda/structures/include/data_structures.cuh
 vector
